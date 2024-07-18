@@ -18,11 +18,11 @@ if [ ! -f "$SCRIPT_PATH" ]; then
   exit 1
 fi
 
-# Determine the script name
-SCRIPT_NAME=$(basename "$SCRIPT_PATH")
+# Determine the script name without extension
+SCRIPT_NAME=$(basename "$SCRIPT_PATH" .py)
 DEST_PATH="$DEST_DIR/$SCRIPT_NAME"
 
-# Copy the script to the destination path
+# Copy the script to the destination path without extension
 cp "$SCRIPT_PATH" "$DEST_PATH"
 
 # Make the script executable
