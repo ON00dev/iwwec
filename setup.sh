@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # script name
-SCRIPT_NAME="iwwerc.py"
+SCRIPT_NAME="iwwerc.exe"
 
 # local path
 DEST_DIR="/usr/local/bin"
