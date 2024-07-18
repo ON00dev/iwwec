@@ -1,28 +1,29 @@
 #!/bin/bash
 
-# script name
-SCRIPT_NAME="iwwerc.exe"
+# Script name
+SCRIPT_NAME="iwwerc"
 
-# local path
+# Destination path
 DEST_DIR="/usr/local/bin"
-DEST_PATH="$DEST_DIR/iwwerc"
+DEST_PATH="$DEST_DIR/$SCRIPT_NAME"
 
-# check sudo permition
+# Check for sudo permissions
 if [ "$EUID" -ne 0 ]; then
-  echo "Please, execute as root"
-  exit
+  echo "Please run as root."
+  exit 1
 fi
 
-# copy script to destine path
-cp $SCRIPT_NAME $DEST_PATH
+# Copy the script to the destination path
+cp "$SCRIPT_NAME" "$DEST_PATH"
 
-# turn executable
-chmod +x $DEST_PATH
+# Make the script executable
+chmod +x "$DEST_PATH"
 
-# check directory in PATH
-if [[ ":$PATH:" != *":$DEST_DIR:"* ]]; then
+# Check if the directory is in the PATH
+if ! echo "$PATH" | grep -q "$DEST_DIR"; then
+  # Add the directory to the PATH and save to user's profile
   echo "export PATH=\$PATH:$DEST_DIR" >> ~/.bashrc
   source ~/.bashrc
 fi
 
-echo "Complete installation. You can use the 'iwwerc' command from anywhere."
+echo "Installation complete. You can use the '$SCRIPT_NAME' command from anywhere."
