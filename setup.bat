@@ -16,15 +16,19 @@ if not exist "%DEST_DIR%" (
 REM Copia o executável para o diretório de destino
 copy "dist\%EXE_NAME%" "%DEST_EXE%"
 
-REM Adiciona o diretório de destino ao PATH apenas se não estiver presente
+REM Adiciona o diretório ao PATH do sistema, se não estiver presente
+setlocal enabledelayedexpansion
+set "CURRENT_PATH=%PATH%"
 for %%A in ("%PATH:;=" "%") do (
     if /I "%%~A"=="%DEST_DIR%" (
+        echo Directory already in PATH.
         goto :EOF
     )
 )
 
 REM Adiciona o diretório ao PATH do sistema
-setx PATH "%PATH%;%DEST_DIR%"
+echo Adding directory to PATH...
+setx PATH "%CURRENT_PATH%;%DEST_DIR%"
 
 echo Complete installation. You can use the 'iwwerc' command from anywhere.
 pause
