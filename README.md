@@ -1,6 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=46&pause=1000&color=505050&background=10151DFD&center=false&vCenter=true&random=false&width=500&lines=IWWERC)](https://git.io/typing-svg)
 
-## Getting Started for Linux✨
+## Getting Started on Linux✨
 
 - Clone the repository: `git clone https://github.com/ON00dev/iwwerc.git`.
 - Go to the directory: `cd iwwerc`.
@@ -9,7 +9,7 @@
 - Enter the path to the iwwerc.py file: `./iwwerc/build/iwwerc/code/iwwerc.py`
 - It's ready to use!
 
-## Getting Started for Windows✨
+## Getting Started on Windows✨
 
 - Clone the repository: `git clone https://github.com/ON00dev/iwwerc.git`.
 - Open the file explorer and look for the cloned repository.
