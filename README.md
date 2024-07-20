@@ -10,7 +10,7 @@
 - It's ready to use!
 
 ## Getting Started on Windows✨
-<img src="https://github.com/tandpfun/skill-icons/blob/main/icons/windows.svg" alt="windows" width="48">
+<img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Windows-Light.svg" alt="windows" width="48">
 
 
 - Clone the repository: `git clone https://github.com/ON00dev/iwwerc.git`.
