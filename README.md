@@ -10,9 +10,7 @@
 - It's ready to use!
 
 ## Getting Started on Windows✨
-<a href="https://instagram.com/victor_nasc00">
-  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Linux.svg" alt="Discord" width="48">
-</a>
+<img src="https://github.com/tandpfun/skill-icons/blob/main/icons/windows.svg" alt="windows" width="48">
 
 
 - Clone the repository: `git clone https://github.com/ON00dev/iwwerc.git`.
