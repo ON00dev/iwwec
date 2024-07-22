@@ -15,9 +15,7 @@
 - Clone the repository: `git clone https://github.com/ON00dev/iwwerc.git`.
 - Open the file explorer and look for the cloned repository.
 - Run setup.bat with administrator privileges.
-- Start the command prompt with administrator privileges.
-- Go to the iwwerc directory: `cd iwwerc`
-- Run setup.bat: `setup.bat`
+- Enter the path to the iwwerc.exe file: `./iwwerc/dist/iwwerc.exe`
 - It's ready to use!
 
 ## How to Use 📝
